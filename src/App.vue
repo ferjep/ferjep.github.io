@@ -1,0 +1,20 @@
+<script setup>
+import SideBar from './components/SideBar.vue'
+
+import ViewContainer from './components/ViewContainer.vue'
+import { ref } from 'vue'
+import { sectionsArr } from './sections'
+
+const activeViewId = ref(sectionsArr[0].id)
+
+const updateActiveView = (id) => {
+    activeViewId.value = id
+}
+</script>
+
+<template>
+    <div class="flex">
+        <SideBar :activeId="activeViewId"/>
+        <ViewContainer @on-view-change-id="updateActiveView"/>
+    </div>
+</template>
