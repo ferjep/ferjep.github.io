@@ -2,10 +2,26 @@
 const props = defineProps({
     id: String
 })
+
+const arrowDownClass = `
+    after:content-['\\2304']
+    last:after:content-['']
+    after:absolute
+    after:text-slate-500 
+    after:text-4xl
+    after:left-1/2 
+    after:bottom-2
+    after:animate-bounce
+`
+
 </script>
 
 <template>
-    <div :id="props.id" class="h-screen w-full text-2xl snap-start">
+    <div
+        :id="props.id"
+        class="mx-auto relative h-screen overflow-y-hidden text-2xl snap-start p-5 w-full max-w-2xl"
+        :class="arrowDownClass"
+    >
         <slot></slot>
     </div>
 </template>
