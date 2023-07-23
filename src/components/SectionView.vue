@@ -4,11 +4,11 @@ const props = defineProps({
 })
 
 const arrowDownClass = `
-    after:content-['\\2304']
+after:content-['V']
     last:after:content-['']
     after:absolute
     after:text-slate-500 
-    after:text-4xl
+    after:text-2xl
     after:left-1/2 
     after:bottom-2
     after:animate-bounce
