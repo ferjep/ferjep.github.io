@@ -1,8 +1,9 @@
 <script setup>
-import { sectionsObj } from '../data/sections';
 import SectionView from './SectionView.vue';
 import PhotoImg from '../assets/photo.webp'
 import BgText from './BgText.vue'
+
+const props = defineProps({id: String })
 
 const handleSeeMore = () => {
     const container = document.getElementById('view-container')
@@ -15,7 +16,7 @@ const handleSeeMore = () => {
 }
 </script>
 <template>
-    <SectionView :id="sectionsObj.about.id">
+    <SectionView :id="props.id">
         <div class="h-full w-full">
             <div class="flex h-full items-center">
                 <div class="mr-4 flex-1">

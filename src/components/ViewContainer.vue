@@ -1,9 +1,6 @@
 <script setup>
-import RecommendatonsView from './RecommendatonsView.vue'
-import AboutView from './AboutView.vue'
-import ProjectsView from './ProjectsView.vue'
 import { debounce } from '../utils'
-import { sectionsArr } from '../data/sections'
+import sections from '../data/sections'
 import { onMounted, ref } from 'vue'
 
 const emit = defineEmits({
@@ -23,7 +20,7 @@ const updateActiveView = debounce(() => {
 }, 50)
 
 onMounted(() => {
-    views.value = sectionsArr.map((section) => ({
+    views.value = sections.map((section) => ({
         el: document.getElementById(section.id),
         section,
     }))
@@ -35,8 +32,11 @@ onMounted(() => {
 </script>
 <template>
     <div id="view-container" ref="container" class="flex-1 h-screen overflow-y-auto snap-y snap-mandatory bg-gray-100 ">
-        <AboutView />
-        <ProjectsView />
-        <RecommendatonsView />
+        <component 
+            v-for="section in sections"
+            :key="section.id"
+            :is="section.view" 
+            :id="section.id"
+        />
     </div>
 </template>

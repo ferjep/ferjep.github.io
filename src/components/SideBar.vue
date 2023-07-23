@@ -5,7 +5,7 @@ import GithubIcon from '../assets/icons/github.svg'
 import MailIcon from '../assets/icons/mail.svg'
 import ContactLink from './ContactLink.vue'
 
-import {sectionsArr} from '../data/sections'
+import sections from '../data/sections'
 
 const props = defineProps({
     activeId: String
@@ -25,7 +25,7 @@ const props = defineProps({
             </div>
             <ul class="w-full text-xl">
                 <SideBarLink
-                    v-for="section in sectionsArr"
+                    v-for="section in sections"
                     :key="section.id"
                     :href="section.id"
                     :title="section.title"
