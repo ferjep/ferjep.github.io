@@ -34,7 +34,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div ref="container" class="flex-1 h-screen overflow-y-auto snap-y snap-mandatory bg-gray-100 ">
+    <div id="view-container" ref="container" class="flex-1 h-screen overflow-y-auto snap-y snap-mandatory bg-gray-100 ">
         <AboutView />
         <ProjectsView />
         <RecommendatonsView />
