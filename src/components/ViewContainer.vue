@@ -1,11 +1,9 @@
 <script setup>
-import HomeView from './HomeView.vue'
-import ContactView from './ContactView.vue'
 import RecommendatonsView from './RecommendatonsView.vue'
 import AboutView from './AboutView.vue'
 import ProjectsView from './ProjectsView.vue'
 import { debounce } from '../utils'
-import { sectionsArr } from '../sections'
+import { sectionsArr } from '../data/sections'
 import { onMounted, ref } from 'vue'
 
 const emit = defineEmits({
@@ -37,10 +35,8 @@ onMounted(() => {
 </script>
 <template>
     <div ref="container" class="flex-1 h-screen overflow-y-auto snap-y snap-mandatory bg-gray-100 ">
-        <HomeView />
         <AboutView />
         <ProjectsView />
         <RecommendatonsView />
-        <ContactView />
     </div>
 </template>

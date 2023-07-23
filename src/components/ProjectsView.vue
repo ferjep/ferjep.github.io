@@ -1,5 +1,5 @@
 <script setup>
-import { sectionsObj } from '../sections'
+import { sectionsObj } from '../data/sections'
 import SectionView from './SectionView.vue'
 
 </script>

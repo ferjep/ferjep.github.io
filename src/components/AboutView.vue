@@ -1,14 +1,25 @@
 <script setup>
-import { sectionsObj } from '../sections'
-import SectionView from './SectionView.vue'
+import { sectionsObj } from '../data/sections';
+import SectionView from './SectionView.vue';
+import PhotoImg from '../assets/photo.webp'
 
 </script>
 <template>
     <SectionView :id="sectionsObj.about.id">
         <div class="h-full w-full flex justify-center items-center">
-            <h1 class="text-2xl">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </h1>
+            <div class="flex">
+                <div class="mr-4 flex-1">
+                    <p class="text-sm mb-5">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <a href="" class="text-xl cursor-pointer bg-gradient-to-r from-slate-900 to-cyan-800 text-white rounded p-2">
+                        Contact
+                    </a>
+                </div>
+                <div class="h-40 w-40 bg-gradient-to-r from-slate-900 via-cyan-900 to-slate-900 rounded overflow-hidden shadow-2xl">
+                    <img :src="PhotoImg" />
+                </div>
+            </div>
         </div>
     </SectionView>
 </template>

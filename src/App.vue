@@ -3,7 +3,7 @@ import SideBar from './components/SideBar.vue'
 
 import ViewContainer from './components/ViewContainer.vue'
 import { ref } from 'vue'
-import { sectionsArr } from './sections'
+import { sectionsArr } from './data/sections'
 
 const activeViewId = ref(sectionsArr[0].id)
 
