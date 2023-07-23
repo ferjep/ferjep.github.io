@@ -14,7 +14,7 @@ const props = defineProps({
 </script>
 <template>
     <div class="h-screen w-80">
-        <div class="fixed w-80 h-full bg-slate-800 py-4 flex flex-col justify-between shadow-xl text-white">
+        <div class="fixed w-80 h-full bg-slate-800 pt-4 pb-6 flex flex-col justify-between shadow-xl text-white">
             <div class="px-4">
                 <h1 class="text-4xl font-bold mb-3 font-sans">
                     Fernando Esparragoza
