@@ -3,7 +3,7 @@ import ExperienceIcon from '@/assets/icons/experience.svg'
 import RecommendationIcon from '@/assets/icons/recommendation.svg'
 
 import AboutView from '../components/AboutView.vue'
-import ProjectsView from '../components/ProjectsView.vue'
+import ExperienceView from '../components/ExperienceView.vue'
 import RecommendationsView from '../components/RecommendatonsView.vue'
 
 export default [
@@ -17,7 +17,7 @@ export default [
         id: 'experience',
         title: 'Experience',
         icon: ExperienceIcon,
-        view: ProjectsView,
+        view: ExperienceView,
     },
     {
         id: 'recommendations',
