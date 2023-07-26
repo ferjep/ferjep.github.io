@@ -20,7 +20,7 @@ const scrollTo = (index) => {
 }
 </script>
 <template>
-    <SectionView :id="props.id">
+    <SectionView :id="props.id" class="flex items-center sm:block">
         <div class="h-full w-full flex flex-col justify-center">
             <div ref="container" class="flex items-center gap-8 overflow-x-hidden overflow-y-hidden snap-x mb-4">
                 <div v-for="recommendation in recommendations" :key="recommendation.name" class="snap-center shrink-0 w-full">
@@ -28,12 +28,12 @@ const scrollTo = (index) => {
                         <a :href="recommendation.profileUrl" target="_blank" class="absolute right-0 mr-4">
                             &#128279;
                         </a>
-                        <div class="flex flex-col items-center mb-4">
+                        <div class="flex flex-col items-center text-center mb-4">
                             <a :href="recommendation.profileUrl" target="_blank">
                                 <img :src="recommendation.profileImg" class="rounded-md w-20 mb-2"/>
                             </a>
                             <BgText class="mb-2">
-                                <a :href="recommendation.profileUrl" target="_blank">{{recommendation.name}}</a>
+                                <a :href="recommendation.profileUrl" target="_blank" class="whitespace-normal">{{recommendation.name}}</a>
                             </BgText>
                             <p class="text-base">{{recommendation.role}}</p>
                         </div>

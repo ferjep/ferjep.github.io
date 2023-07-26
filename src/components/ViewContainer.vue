@@ -35,7 +35,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div id="view-container" ref="container" class="flex-1 h-screen overflow-y-auto snap-y snap-mandatory bg-gray-100 ">
+    <div id="view-container" ref="container" class="flex-1 h-screen overflow-y-auto lg:snap-y md:snap-mandatory bg-gray-100 ">
         <component 
             v-for="section in sections"
             :key="section.id"

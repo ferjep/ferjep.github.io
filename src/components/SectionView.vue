@@ -4,7 +4,7 @@ const props = defineProps({
 })
 
 const arrowDownClass = `
-after:content-['V']
+    after:content-['V']
     last:after:content-['']
     after:absolute
     after:text-slate-500 
@@ -19,7 +19,7 @@ after:content-['V']
 <template>
     <div
         :id="props.id"
-        class="mx-auto relative h-screen overflow-y-hidden text-2xl snap-start p-5 w-full max-w-2xl"
+        class="mx-auto relative min-h-screen sm:min-h-0 sm:h-screen lg:overflow-y-hidden text-2xl snap-start p-5 pt-16 lg:pt-4 w-full max-w-2xl"
         :class="arrowDownClass"
     >
         <slot></slot>

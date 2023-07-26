@@ -20,7 +20,7 @@ const toggleMenu = () => {
 
 </script>
 <template>
-    <div class="h-12 lg:h-screen w-80">
+    <div class="lg:h-screen w-full lg:w-80">
         <div
             class="fixed z-50 w-full lg:w-80 overflow-y-hidden lg:h-full bg-slate-800 lg:pt-4 pb-6 flex flex-col justify-between shadow-xl text-white transition-all"
             :class="isMenuOpen ? 'h-full' : 'h-12'"
