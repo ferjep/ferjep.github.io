@@ -6,17 +6,35 @@ import MailIcon from '../assets/icons/mail.svg'
 import ContactLink from './ContactLink.vue'
 
 import sections from '../data/sections'
+import { ref } from 'vue';
 
 const props = defineProps({
     activeId: String
 })
 
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value
+}
+
 </script>
 <template>
-    <div class="h-screen w-80">
-        <div class="fixed w-80 h-full bg-slate-800 pt-4 pb-6 flex flex-col justify-between shadow-xl text-white">
+    <div class="h-12 lg:h-screen w-80">
+        <div
+            class="fixed z-50 w-full lg:w-80 overflow-y-hidden lg:h-full bg-slate-800 lg:pt-4 pb-6 flex flex-col justify-between shadow-xl text-white transition-all"
+            :class="isMenuOpen ? 'h-full' : 'h-12'"
+        >
+            <button
+                class="lg:hidden absolute transition-all top-1.5 right-5 space-y-1.5 bg-white p-2 rounded-md"
+                @click="toggleMenu"
+            >
+                <div class="w-6 h-0.5 bg-slate-900 transition-all" :class="{'rotate-45 translate-y-2': isMenuOpen}"></div>
+                <div class="ml-auto w-4 h-0.5 bg-slate-900" :class="{'invisible': isMenuOpen}"></div>
+                <div class="w-6 h-0.5 bg-slate-900 transition-all" :class="{'-rotate-45 -translate-y-2': isMenuOpen}"></div>
+            </button>
             <div class="px-4">
-                <h1 class="text-4xl font-bold mb-3 font-sans">
+                <h1 class="h-12 lg:h-fit flex items-center -mt-1 lg:mt-0 lg:block text-xl lg:text-4xl font-bold mb-3 font-sans">
                     Fernando Esparragoza
                 </h1>
                 <h1 class="text-xl font-light mb-1 pb-4">

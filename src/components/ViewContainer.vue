@@ -10,8 +10,8 @@ const emit = defineEmits({
 const container = ref(null)
 const views = ref([])
 
-const updateActiveView = debounce(() => {
-    const view = views.value.find((view) => view.el.offsetTop === container.value.scrollTop)
+const updateActiveView = debounce(({scrollTop}) => {
+    const view = views.value.find((view) => view.el.offsetTop >= scrollTop)
 
     if (view) {
         emit('onViewChangeId', view.section.id)
@@ -26,7 +26,11 @@ onMounted(() => {
     }))
 
     container.value.addEventListener('scroll', () => {
-        updateActiveView()
+        updateActiveView({scrollTop: container.value.scrollTop})
+    }, { passive: true })
+
+    window.addEventListener('scroll', () => {
+        updateActiveView({scrollTop: window.scrollY})
     }, { passive: true })
 })
 </script>
