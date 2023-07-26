@@ -4,7 +4,8 @@ const props = defineProps({
 })
 
 const arrowDownClass = `
-    after:content-['V']
+    after:content-['']
+    sm:after:content-['V']
     last:after:content-['']
     after:absolute
     after:text-slate-500 
