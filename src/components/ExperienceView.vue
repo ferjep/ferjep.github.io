@@ -53,7 +53,7 @@ const props = defineProps({id: String })
                     </p>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
                         <div v-for="skill in skills" :key="skill.name">
-                            <div class="flex items-center justify-center text-white bg-slate-900 px-1 py-2 rounded h-12">
+                            <div class="flex items-center justify-center text-white bg-slate-900 px-1 py-2 rounded h-10">
                                 <img :src="skill.icon" class="h-full mr-2"/>
                                 <p class="text-base">{{skill.name}}</p>
                             </div>

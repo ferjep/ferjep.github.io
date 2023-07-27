@@ -10,9 +10,11 @@ const currentIndex = ref(0)
 const container = ref(null)
 
 const scrollTo = (index) => {
+    const width = container.value.scrollWidth / recommendations.length
+
     container.value.scrollTo({
         top: 0,
-        left: container.value.offsetWidth * index,
+        left: width * index ,
         behavior: 'smooth'
     })
 
@@ -22,7 +24,7 @@ const scrollTo = (index) => {
 <template>
     <SectionView :id="props.id" class="flex items-center sm:block">
         <div class="h-full w-full flex flex-col justify-center">
-            <div ref="container" class="flex items-center gap-8 overflow-x-hidden overflow-y-hidden snap-x mb-4">
+            <div ref="container" class="flex items-center gap-8 overflow-x-hidden overflow-y-hidden snap-x snap-x-mandatory mb-4">
                 <div v-for="recommendation in recommendations" :key="recommendation.name" class="snap-center shrink-0 w-full">
                     <div class="w-full bg-gray-200 p-4 rounded shadow-md relative">
                         <a :href="recommendation.profileUrl" target="_blank" class="absolute right-0 mr-4">

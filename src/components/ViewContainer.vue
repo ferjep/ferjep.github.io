@@ -11,7 +11,20 @@ const container = ref(null)
 const views = ref([])
 
 const updateActiveView = debounce(({scrollTop}) => {
-    const view = views.value.find((view) => view.el.offsetTop >= scrollTop)
+    // Choosing the closest view
+    const view = views.value.reduce((closest,view) => {
+        const closestMid = closest.el.offsetTop + (closest.el.offsetHeight / 2)
+        const viewMid = view.el.offsetTop + (view.el.offsetHeight / 2)
+
+        const closestDiff = Math.abs(scrollTop - closestMid)
+        const viewDiff = Math.abs(scrollTop - viewMid)
+
+        const newClosestDiff = Math.min(closestDiff, viewDiff)
+
+        return newClosestDiff === viewDiff
+            ? view
+            : closest
+    })
 
     if (view) {
         emit('onViewChangeId', view.section.id)
@@ -32,10 +45,12 @@ onMounted(() => {
     window.addEventListener('scroll', () => {
         updateActiveView({scrollTop: window.scrollY})
     }, { passive: true })
+
+    updateActiveView({scrollTop: 0})
 })
 </script>
 <template>
-    <div id="view-container" ref="container" class="flex-1 h-screen overflow-y-auto lg:snap-y md:snap-mandatory bg-gray-100 ">
+    <div id="view-container" ref="container" class="flex-1 h-screen overflow-y-auto md:snap-y md:snap-mandatory bg-gray-100 ">
         <component 
             v-for="section in sections"
             :key="section.id"

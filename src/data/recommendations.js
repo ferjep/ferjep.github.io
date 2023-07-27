@@ -23,7 +23,7 @@ export default [
     {
         name: 'Osama Hussien',
         role: 'Backend Enginer',
-        text: 'I had the pleasure of working closely with Fernando during our time together as software engineers at MintMe, and I can wholeheartedly vouch for his exceptional skills and contributions. Fernando is an outstanding developer who consistently delivers high-quality work and demonstrates a deep understanding of software engineering principles. He tackles complex challenges with ease, offering innovative solutions that have significantly improved our team\'s efficiency. Beyond his technical abilities, Fernando is a true team player, always willing to lend a helping hand and provide guidance to his colleagues. His collaborative nature and strong communication skills make him a valuable asset to any project. I have the utmost confidence in Fernando\'s abilities and believe he would be a valuable addition to any software engineering team.',
+        text: 'I had the pleasure of working closely with Fernando during our time together as software engineers at MintMe, and I can wholeheartedly vouch for his exceptional skills and contributions. Fernando is an outstanding developer who consistently delivers high-quality work and demonstrates a deep understanding of software engineering principles. He tackles complex challenges with ease, offering innovative solutions that have significantly improved our team\'s efficiency. His collaborative nature and strong communication skills make him a valuable asset to any project. I have the utmost confidence in Fernando\'s abilities and believe he would be a valuable addition to any software engineering team.',
         profileUrl: 'https://www.linkedin.com/in/osama-hussien/'
     },
     {
