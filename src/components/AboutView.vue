@@ -20,8 +20,8 @@ const handleSeeMore = () => {
         <div class="h-full w-full">
             <div class="flex h-full items-center">
                 <div class="mr-4 flex-1">
-                    <div class="float-right w-28 h-28 sm:w-44 sm:h-44 ml-5 bg-gradient-to-r from-slate-900 via-cyan-900 to-slate-900 rounded overflow-hidden shadow-2xl">
-                        <img :src="PhotoImg" />
+                    <div class="float-right ml-5 bg-gradient-to-r from-slate-900 via-cyan-900 to-slate-900 rounded overflow-hidden shadow-2xl">
+                        <img :src="PhotoImg" class="w-28 h-28 sm:w-44 sm:h-44" alt="ferjep-photo"/>
                     </div>
                     <h1 class="text-3xl mb-3">Welcome.</h1>
                     <p class="text-sm mb-3 leading-relaxed text-justify">

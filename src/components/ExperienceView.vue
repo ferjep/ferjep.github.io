@@ -18,7 +18,7 @@ const props = defineProps({id: String })
                         </a>
                         <div class="-mt-2 sm:mt-0 w-28 mr-2">
                             <a href="https://www.mintme.com" target="_blank">
-                                <img :src="MintmeLogo" class="h-full"/>
+                                <img :src="MintmeLogo" class="h-24 w-24" alt="mintme-logo"/>
                             </a>
                         </div>
                         <div class="w-full text-center wrap sm:text-left">
@@ -53,8 +53,8 @@ const props = defineProps({id: String })
                     </p>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
                         <div v-for="skill in skills" :key="skill.name">
-                            <div class="flex items-center justify-center text-white bg-slate-900 px-1 py-2 rounded h-10">
-                                <img :src="skill.icon" class="h-full mr-2"/>
+                            <div class="flex items-center justify-center text-white bg-slate-900 px-1 rounded h-10">
+                                <img :src="skill.icon" class="h-6 w-6 mr-2" :alt="skill.name.toLowerCase() + '-logo'"/>
                                 <p class="text-base">{{skill.name}}</p>
                             </div>
                         </div>

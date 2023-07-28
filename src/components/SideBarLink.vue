@@ -14,7 +14,11 @@ const props = defineProps({
             :class="{'border-white bg-gray-100 text-black': props.active}"
             class="flex items-center py-2 px-4 border-transparent border-b hover:text-black hover:border-white hover:bg-gray-100"
         >
-            <img class="mr-2 w-5 h-5" :src="props.icon" />
+            <img
+                class="mr-2 w-5 h-5"
+                :src="props.icon"
+                :alt="title.toLowerCase() + '-img'"
+            />
             <span>{{ props.title }}</span>
         </a>
     </li>

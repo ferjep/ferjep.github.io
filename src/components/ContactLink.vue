@@ -12,7 +12,12 @@ const props = defineProps({
         class="flex items-center mb-4 last:mb-0"
         target="_blank"
     >
-        <img :src="props.icon" class="inline w-6 mr-2" :class="imgClass || ''"/>
+        <img
+            :src="props.icon"
+            :class="imgClass || ''"
+            alt="contact-logo"
+            class="inline w-5 h-5 mr-2"
+        />
         <span class="inline">{{ props.text }}</span>
     </a>
 </template>
