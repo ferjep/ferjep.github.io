@@ -57,6 +57,7 @@ const scrollTo = (index) => {
                         'border border-slate-700 border-4': currentIndex !== index -1
                     }"
                     @click="scrollTo(index - 1)"
+                    :aria-label="`recommendation-slider-${index}`"
                 >
                 </button>
             </div>

@@ -28,6 +28,7 @@ const toggleMenu = () => {
             <button
                 class="lg:hidden absolute transition-all top-1.5 right-5 space-y-1.5 bg-white p-2 rounded-md"
                 @click="toggleMenu"
+                aria-label="menu"
             >
                 <div class="w-6 h-0.5 bg-slate-900 transition-all" :class="{'rotate-45 translate-y-2': isMenuOpen}"></div>
                 <div class="ml-auto w-4 h-0.5 bg-slate-900" :class="{'invisible': isMenuOpen}"></div>

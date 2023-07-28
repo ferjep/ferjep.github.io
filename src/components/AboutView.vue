@@ -35,6 +35,7 @@ const handleSeeMore = () => {
                     <button
                         @click="handleSeeMore"
                         class="text-xl cursor-pointer bg-gradient-to-r from-slate-900 to-cyan-800 text-white rounded p-2 hover:underline"
+                        aria-label="see-more"
                     >
                         See more
                     </button>
