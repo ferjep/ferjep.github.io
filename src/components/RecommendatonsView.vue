@@ -32,7 +32,7 @@ const scrollTo = (index) => {
                         </a>
                         <div class="flex flex-col items-center text-center mb-4">
                             <a :href="recommendation.profileUrl" target="_blank">
-                                <img :src="recommendation.profileImg" class="rounded-md w-20 h-20 mb-2" alt="recommendation-photo"/>
+                                <img v-if="recommendation.profileImg" :src="recommendation.profileImg" class="rounded-md w-20 h-20 mb-2" alt="recommendation-photo"/>
                             </a>
                             <BgText class="mb-2">
                                 <a :href="recommendation.profileUrl" target="_blank" class="whitespace-normal">{{recommendation.name}}</a>

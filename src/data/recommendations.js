@@ -2,7 +2,7 @@ export default [
     {
         name: 'Rodolfo Hernández',
         role: 'DevOps/System Administrator',
-        text: 'I worked with Fernando in a cryptocurrency project for about 2 years and I can say that you will never be disappointed about his skills (soft and hard). It is very creative and accurate in complex situations,  always has something to give and propose, and technically is simply outstanding. Who knows me, knows that I have many years of experience in large, mid, and startup companies, and with no doubt I could say that Fernando is one of the more impressive programmer that I have co worked with.',
+        text: 'I worked with Fernando in a cryptocurrency project for about 2 years and I can say that you will never be disappointed about his skills (soft and hard). It is very creative and accurate in complex situations,  always has something to give and propose, and technically is simply outstanding. Who knows me, knows that I have many years of experience in large, mid, and startup companies, and with no doubt I could say that Fernando is one of the most impressive programmer that I have co worked with.',
         profileUrl: 'https://www.linkedin.com/in/rodolfo-hernandez-8b427350/',
         profileImg: 'https://media.licdn.com/dms/image/D4D03AQEUyNWh4lI-3g/profile-displayphoto-shrink_200_200/0/1667558713608?e=1695859200&v=beta&t=itdjvARX4IjqERHSfbSStoSGTQWBKAv9RFZbU3rdI-U'
     },
