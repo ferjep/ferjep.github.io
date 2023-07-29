@@ -36,7 +36,7 @@ const props = defineProps({id: String })
                                 · Full-time
                             </p>
                             <p class="text-base text-xs mb-1">
-                                Feb 2021 · Jun 2021 
+                                Feb 2021 · Present
                             </p>
                             <p class="text-base text-xs mb-1">
                                 Belize · Remote

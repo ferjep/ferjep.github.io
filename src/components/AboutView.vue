@@ -25,7 +25,7 @@ const handleSeeMore = () => {
                     </div>
                     <h1 class="text-3xl mb-3">Welcome.</h1>
                     <p class="text-sm mb-3 leading-relaxed text-justify">
-                        My name is Fernando, I'm a Full-Stack Developer focused on <BgText>web development</BgText>, backend services, performance optimization and Blockchain technologies.
+                        I'm Fernando, a Full-Stack Developer focused on <BgText>web development</BgText>, backend services, performance optimization and Blockchain technologies.
                         I have a proven track record of delivering <BgText>high-quality code</BgText> and robust problem solutions.
                     </p>
                     <p class="text-sm mb-5 leading-relaxed text-justify">

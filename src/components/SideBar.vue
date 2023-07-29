@@ -62,7 +62,7 @@ const toggleMenu = () => {
                     />
                     <ContactLink
                         href="https://www.linkedin.com/in/ferjep/"
-                        text="Linkedin"
+                        text="LinkedIn"
                         :icon="LinkedinIcon"
                     />
                     <ContactLink
