@@ -11,7 +11,7 @@ const props = defineProps({id: String })
     <SectionView :id="props.id">
         <div class="h-full w-full flex justify-center items-center">
             <div class="w-full">
-                <div class="shadow-md p-3 mb-4 rounded bg-gray-200 mb-5">
+                <div class="shadow-md p-3 mb-10 rounded bg-gray-200 mb-5">
                     <div class="relative flex flex-col sm:flex-row items-center mb-2">
                         <a href="https://www.mintme.com" target="_blank" class="absolute top-1 right-0 mr-4">
                             &#128279;
@@ -48,21 +48,7 @@ const props = defineProps({id: String })
                     </p>
                 </div>
                 <div>
-                    <div class="text-end">
-                        <a
-                            class="z-50 text-base hover:underline rounded inline-block bg-cyan-800 hover:bg-slate-800 text-white pb-2 pt-3 px-3 mb-4 cursor-pointer"
-                            href="https://drive.google.com/file/d/1_xAWXTVZJQuYLwS07YdFee5rq17gBSDM/view?usp=sharing"
-                            target="_blank"
-                        >
-                            <div class="inline-block mr-2 ">
-                                View full resume
-                            </div>
-                            <div class="inline-block">
-                                <svg height="16" fill="#dcece8" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M15,10 L15,14 C15,15.1045695 14.1045695,16 13,16 L2,16 C0.8954305,16 0,15.1045695 0,14 L0,3 C0,1.8954305 0.8954305,1 2,1 L6,1 L6,3 L2,3 L2,14 L13,14 L13,10 L15,10 Z M13.9971001,3.41421356 L7.70420685,9.70710678 L6.28999329,8.29289322 L12.5828865,2 L8.99710007,2 L8.99710007,0 L15.9971001,0 L15.9971001,7 L13.9971001,7 L13.9971001,3.41421356 Z" fill-rule="evenodd"/></svg>
-                            </div>
-                        </a>
-                    </div>
-                    <p class="mb-4">
+                    <p class="mb-4 text-center">
                         Skills
                     </p>
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4 w-fit mx-auto">
