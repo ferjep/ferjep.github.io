@@ -48,25 +48,30 @@ const props = defineProps({id: String })
                     </p>
                 </div>
                 <div>
-                    <p class="text-center mb-4 underline">
-                        Skills
-                    </p>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
-                        <div v-for="skill in skills" :key="skill.name">
-                            <div class="flex items-center justify-center text-white bg-slate-900 px-1 rounded h-10">
-                                <img :src="skill.icon" class="h-6 w-6 mr-2" :alt="skill.name.toLowerCase() + '-logo'"/>
-                                <p class="text-base">{{skill.name}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
+                    <div class="text-end">
                         <a
-                            class="z-50 text-lg hover:underline rounded inline-block bg-emerald-700 hover:bg-emerald-900 text-white px-2 cursor-pointer"
+                            class="z-50 text-base hover:underline rounded inline-block bg-cyan-800 hover:bg-slate-800 text-white pb-2 pt-3 px-3 mb-4 cursor-pointer"
                             href="https://drive.google.com/file/d/1_xAWXTVZJQuYLwS07YdFee5rq17gBSDM/view?usp=sharing"
                             target="_blank"
                         >
-                            View full resume
+                            <div class="inline-block mr-2 ">
+                                View full resume
+                            </div>
+                            <div class="inline-block">
+                                <svg height="16" fill="#dcece8" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M15,10 L15,14 C15,15.1045695 14.1045695,16 13,16 L2,16 C0.8954305,16 0,15.1045695 0,14 L0,3 C0,1.8954305 0.8954305,1 2,1 L6,1 L6,3 L2,3 L2,14 L13,14 L13,10 L15,10 Z M13.9971001,3.41421356 L7.70420685,9.70710678 L6.28999329,8.29289322 L12.5828865,2 L8.99710007,2 L8.99710007,0 L15.9971001,0 L15.9971001,7 L13.9971001,7 L13.9971001,3.41421356 Z" fill-rule="evenodd"/></svg>
+                            </div>
                         </a>
+                    </div>
+                    <p class="mb-4">
+                        Skills
+                    </p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4 w-fit mx-auto">
+                        <div v-for="skill in skills" :key="skill.name">
+                            <div class="flex items-center justify-start px-1 rounded h-10">
+                                <img :src="skill.icon" class="h-8 w-8 mr-2" :alt="skill.name.toLowerCase() + '-logo'"/>
+                                <p class="text-base">{{skill.name}}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
