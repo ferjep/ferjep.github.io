@@ -15,6 +15,6 @@ const updateActiveView = (id) => {
 <template>
     <div class="lg:flex lg:flex-row font-mono selection:bg-slate-300 selection:text-slate-900 h-screen overflow-y-hidden">
         <SideBar :activeId="activeViewId"/>
-        <ViewContainer @on-view-change-id="updateActiveView"/>
+        <ViewContainer @on-view-change-id="updateActiveView"  :view-id="activeViewId"/>
     </div>
 </template>
