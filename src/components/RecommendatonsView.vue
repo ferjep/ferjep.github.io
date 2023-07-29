@@ -34,7 +34,8 @@ const scrollTo = (index) => {
                             <BgText class="mb-2">
                                 <a target="_blank" class="whitespace-normal">{{recommendation.name}}</a>
                             </BgText>
-                            <p class="text-base">{{recommendation.role}}</p>
+                            <p class="text-base mb-2">{{recommendation.role}}</p>
+                            <p class="text-sm italic opacity-80">+{{recommendation.experienceYears}} years of experience</p>
                         </div>
                         <p class="text-sm text-justify italic">
                             <span class="text-4xl">&#10077;</span>
