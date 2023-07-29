@@ -44,7 +44,7 @@ const props = defineProps({id: String })
                         </div>
                     </div>
                     <p class="text-sm text-justify leading-relaxed">
-                        In my current role as a Full-stack Developer, I've focused on optimizing frontend assets for improved loading times on Google PageSpeed Insights. I've developed various features and fixes using Symfony and Vue.js, managed database migrations, and completely refactored the blockchain gateway using Typescript and Node.js while ensuring backward compatibility. Additionally, I handle the maintenance and implementation of Docker containers, and actively mentor and review other developers to enhance our platform's codebase and services workflow.
+                        In my current role as a Full-stack Developer, I've focused on optimizing frontend assets for improved loading times on Google PageSpeed Insights. I've developed various features and fixes using Symfony and Vue.js, managed database migrations, and completely refactored the blockchain gateway using Typescript and Node.js while ensuring backward compatibility. Additionally, I handle the maintenance and implementation of Docker containers, and actively mentor other developers and review their code to enhance our platform's codebase and services workflow.
                     </p>
                 </div>
                 <div>
