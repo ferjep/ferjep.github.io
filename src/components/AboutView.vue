@@ -23,12 +23,12 @@ const handleSeeMore = () => {
                     <div class="float-right ml-5 bg-gradient-to-r from-slate-900 via-cyan-900 to-slate-900 rounded overflow-hidden shadow-2xl">
                         <img :src="PhotoImg" class="w-28 h-28 sm:w-44 sm:h-44" alt="ferjep-photo"/>
                     </div>
-                    <h1 class="text-3xl mb-3">Welcome.</h1>
+                    <h1 class="text-3xl mb-6">Welcome</h1>
                     <p class="text-sm mb-3 leading-relaxed text-justify">
-                        I'm Fernando, a Full-Stack Developer focused on <BgText>web development</BgText>, backend services, performance optimization and Blockchain technologies.
+                        I'm Full-Stack Developer focused on <BgText>web development</BgText>, backend services, performance optimization and Blockchain technologies.
                         I have a proven track record of delivering <BgText>high-quality code</BgText> and robust problem solutions.
                     </p>
-                    <p class="text-sm mb-5 leading-relaxed text-justify">
+                    <p class="text-sm mb-8 leading-relaxed text-justify">
                         Since I've been coding since childhood, I'm characterized as a fast learner, self-taught and <BgText>proactive</BgText> developer.
                         Those qualifiers have allowed me to achieve <BgText>senior</BgText> roles, mentor other developers, and improve the overall team development experience.
                     </p>
