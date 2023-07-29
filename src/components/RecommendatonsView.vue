@@ -27,15 +27,12 @@ const scrollTo = (index) => {
             <div ref="container" class="flex items-center gap-8 overflow-x-hidden overflow-y-hidden snap-x snap-x-mandatory mb-4">
                 <div v-for="recommendation in recommendations" :key="recommendation.name" class="snap-center shrink-0 w-full">
                     <div class="w-full bg-gray-200 p-4 rounded shadow-md relative">
-                        <a :href="recommendation.profileUrl" target="_blank" class="absolute right-0 mr-4">
-                            &#128279;
-                        </a>
                         <div class="flex flex-col items-center text-center mb-4">
-                            <a :href="recommendation.profileUrl" target="_blank">
+                            <a target="_blank">
                                 <img v-if="recommendation.profileImg" :src="recommendation.profileImg" class="rounded-md w-20 h-20 mb-2" alt="recommendation-photo"/>
                             </a>
                             <BgText class="mb-2">
-                                <a :href="recommendation.profileUrl" target="_blank" class="whitespace-normal">{{recommendation.name}}</a>
+                                <a target="_blank" class="whitespace-normal">{{recommendation.name}}</a>
                             </BgText>
                             <p class="text-base">{{recommendation.role}}</p>
                         </div>
